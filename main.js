@@ -7,14 +7,14 @@ $(document).ready(function(){
 		if(scroll > 120){
 			if(!flag){
 				$("#logo").css({"margin-top":"-5px","width":"50px","height":"50px"});
-				$("header").css({"background-color":"#FE7886"});
+				$("header").css({"background-color":"#4C9FC9"});
 				flag = true;
 			}
 			
 		}else{
 			if(flag){
 				$("#logo").css({"margin-top":"150px","width":"250px","height":"250px"});
-				$("header").css({"background-color":"red"});
+				$("header").css({"background-color":"#256DAF"});
 				flag = false;
 			}
 			
