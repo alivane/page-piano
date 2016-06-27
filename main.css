@@ -1,19 +1,34 @@
 body {
   margin: 0; }
 
-ul {
+header {
+  position: fixed;
+  z-index: 2;
+  background-color: #DEE7E2;
+  width: 96%; }
+  header nav li {
+    color: white; }
+    header nav li:hover {
+      background-color: white; }
+    header nav li a {
+      color: white !important; }
+      header nav li a:hover {
+        color: black !important; }
+
+.fondo ul {
   text-align: center;
   margin: 0;
   padding: 0;
   list-style-type: none; }
-  ul li {
+  .fondo ul li {
     display: inline-block;
     margin: 0px 10px 0px 10px;
     padding: 5px; }
-    ul li .panel {
+    .fondo ul li .panel {
+      margin-top: 70px;
       background-color: white;
       color: black;
-      width: 170px;
+      width: 115px;
       height: 300px;
       border-radius: 20px;
       box-shadow: 0px 0px 5px #000 inset , 0px 0px 5px #000;
@@ -22,30 +37,30 @@ ul {
       padding-top: 70px;
       transform-style: preserve-3d;
       transition: all ease 1s; }
-      ul li .panel:hover {
+      .fondo ul li .panel:hover {
         transform: rotateY(180deg);
         animation: animacion ease 2s forwards; }
-      ul li .panel .front {
+      .fondo ul li .panel .front {
         margin-bottom: 50px;
         backface-visibility: hidden; }
-      ul li .panel .back {
+      .fondo ul li .panel .back {
         position: absolute;
         top: 20px;
         transform: rotateY(180deg) translateZ(100px);
         backface-visibility: hidden; }
-        ul li .panel .back li {
+        .fondo ul li .panel .back li {
           background-color: black;
           color: white;
-          width: 140px;
+          width: 90px;
           margin-top: 30px;
           padding: 5px;
           box-shadow: 0px 0px 3px #2D77AB inset;
           transition: all ease 0.5s; }
-          ul li .panel .back li:hover {
+          .fondo ul li .panel .back li:hover {
             transform: scale(1.2);
             cursor: pointer;
             box-shadow: 0px 5px 0px #32a493, 0px 1px 10px #2285D0, 0px 0px 3px #0F2A3D inset; }
-      ul li .panel img {
+      .fondo ul li .panel img {
         width: 90px;
         margin-bottom: 60px; }
 
@@ -73,5 +88,22 @@ ul {
   padding: 1em;
   min-height: 50vh;
   text-align: center; }
+
+#home {
+  text-align: center;
+  background-color: #0797D1;
+  margin-bottom: 60px; }
+  #home img {
+    display: inline-block;
+    padding: 5px;
+    background-color: white;
+    border: 3px solid #02203C;
+    border-radius: 100%;
+    width: 70px;
+    margin: 7px 25px; }
+
+#vision {
+  margin-top: 100px;
+  margin-bottom: 100px; }
 
 /*# sourceMappingURL=main.css.map */
