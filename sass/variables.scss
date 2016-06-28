@@ -5,14 +5,13 @@ body{
 header{
 	position:fixed;
 	z-index:2;
-	background-color:#DEE7E2;
+	background-color:$celeste;
 	width:96%;
 	nav{
 		li{
 			color:white;
 			&:hover{
 				background-color:white;
-
 			}
 			a{
 				color:white !important;
@@ -74,7 +73,7 @@ header{
 						&:hover{
 							transform: scale(1.2);
 							cursor: pointer;
-							box-shadow:0px 5px 0px hsl(171,53%,42%),0px 1px 10px #2285D0,0px 0px 3px #0F2A3D inset;
+							box-shadow:0px 5px 0px #ceselte ,0px 1px 10px #ceselte ,0px 0px 3px #0F2A3D inset;
 						}
 					}
 				}
@@ -111,6 +110,13 @@ header{
 .fondo-1 {
   background-image: url(img/pianop.jpg);
 }
+.fondo-2 {
+  background-image: url(img/pianop.jpg);
+  padding: 1em;
+  min-height: 65vh;
+  text-align: center;
+}
+
 .modulo-alto {
   padding: 1em;
   min-height: 50vh;
@@ -118,7 +124,7 @@ header{
 }
 #home{
 	text-align:center;
-	background-color:#0797D1;
+	background-color:$celeste;
 	margin-bottom:60px;
 	img{
 		display:inline-block;
@@ -130,7 +136,32 @@ header{
 		margin:7px 25px ;
 	}
 }
-#vision{
+#cursos{
+	text-align:center;
+	a{
+		color:black;
+	}
+	i{
+		font-size: 80px;
+		&:hover{
+			color:$celeste;
+			font-size: 100px;
+		}
+	}
+}
+#canal{
+	 color:white;
+	 text-align:center;
+	 padding-top:100px;
+}
+#vision,#registrate,#canal,#cursos{
 	margin-top:100px;
 	margin-bottom:100px;
+}
+section{
+	.btn{
+	&:hover{
+		background-color:red;
+	}
+}
 }
