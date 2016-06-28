@@ -7,7 +7,8 @@ header {
   background-color: #37B6ED;
   width: 96%; }
   header nav li {
-    color: white; }
+    color: white;
+    font-size: 20px; }
     header nav li:hover {
       background-color: white; }
     header nav li a {
@@ -127,7 +128,17 @@ header {
   margin-top: 100px;
   margin-bottom: 100px; }
 
-section .btn:hover {
-  background-color: red; }
+footer {
+  background-color: #313130;
+  text-align: center;
+  color: #313130;
+  padding: 20px; }
+  footer .footerSub {
+    background-color: #37B6ED; }
+  footer .size i {
+    font-size: 40px;
+    margin: 10px; }
+  footer .footer {
+    background-color: #2685B0; }
 
 /*# sourceMappingURL=main.css.map */
