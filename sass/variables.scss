@@ -3,26 +3,29 @@ body{
 }
 
 header{
-	position:fixed;
-	z-index:2;
+	
+	
 	background-color:$celeste;
-	width:96%;
-	nav{
-		li{
-			color:white;
-			font-size:20px;
-			&:hover{
-				background-color:white;
-			}
-			a{
-				color:white !important;
+	.menu{
+		position:fixed;
+		z-index:2;
+		width:100%;
+		nav{
+			li{
+				color:white;
+				font-size:15px;
 				&:hover{
-					color:black!important;
+					background-color:white;
+				}
+				a{
+					color:white !important;
+					&:hover{
+						color:black!important;
+					}
 				}
 			}
 		}
 	}
-
 }
 .fondo{
 	ul{
@@ -36,22 +39,22 @@ header{
 			margin: 0px 10px 0px 10px ;
 			padding: 5px;
 			.panel{
-				margin-top:70px;
-				background-color:white;
+				margin-top:80px;
+				background-color:whitesmoke;
 				color: black;
 				width:115px;
-				height:300px;
+				height:250px;
 				border-radius:20px;
 				box-shadow:0px 0px 5px #000 inset , 0px 0px 5px #000;
 				position:relative;
-				top:-250px;
-				padding-top:70px;
+		
+				padding-top:40px;
 				transform-style: preserve-3d;
 				transition: all ease 1s;
 				
 				&:hover{
 					transform: rotateY(180deg);
-					animation:animacion ease 2s forwards;
+				//	animation:animacion ease 3s forwards;  
 
 				}
 				.front{
@@ -74,13 +77,13 @@ header{
 						&:hover{
 							transform: scale(1.2);
 							cursor: pointer;
-							box-shadow:0px 5px 0px #ceselte ,0px 1px 10px #ceselte ,0px 0px 3px #0F2A3D inset;
+							box-shadow:0px 5px 0px $celeste ,0px 1px 10px $celeste ,0px 0px 3px #0F2A3D inset;
 						}
 					}
 				}
 				img{
 					width:90px;
-					margin-bottom: 60px;
+					margin-bottom: 21px;
 				}
 			}
 		}
@@ -110,9 +113,11 @@ header{
 }
 .fondo-1 {
   background-image: url(img/pianop.jpg);
+
+
 }
 .fondo-2 {
-  background-image: url(img/pianop.jpg);
+  background-image: url(img/fondo1.jpg);
   padding: 1em;
   min-height: 65vh;
   text-align: center;
@@ -127,27 +132,26 @@ header{
 	text-align:center;
 	background-color:$celeste;
 	margin-bottom:60px;
-	img{
-		display:inline-block;
-		padding:5px;
-		background-color:white;
-		border:3px solid #02203C;
-		border-radius:100%;
-		width: 70px;
-		margin:7px 25px ;
-	}
+	box-shadow:0px 0px 10px white inset;
+	color:whitesmoke;
+	padding:10px;
 }
 #cursos{
 	text-align:center;
 	a{
 		color:black;
 	}
-	i{
-		font-size: 80px;
+	img{
+		width: 100%;
+		height:230px;						
 		&:hover{
-			color:$celeste;
-			font-size: 100px;
+			box-shadow: 1px 6px 9px #47514A;
+			opacity: 0.8;
+			padding:40px;
+			border-radius:100%;
+			margin:0 auto;
 		}
+
 	}
 }
 #canal{
@@ -155,6 +159,7 @@ header{
 	 text-align:center;
 	 padding-top:100px;
 }
+
 #vision,#registrate,#canal,#cursos{
 	margin-top:100px;
 	margin-bottom:100px;
